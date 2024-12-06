@@ -78,25 +78,6 @@ We'll accomplish this with the use of **class attributes** and **class
 methods**.
 
 ***
-
-## Instructions
-
-Define your `Song` class such that an individual song is initialized with a
-name, artist and genre.
-
-```py
-ninety_nine_problems = Song("99 Problems", "Jay-Z", "Rap")
-
-ninety_nine_problems.name
-# "99 Problems"
-
-ninety_nine_problems.artist
-# "Jay-Z"
-
-ninety_nine_problems.genre
-# "Rap"
-```
-
 Create a class attribute, `count`. We will use this attribute to keep track of
 the number of new songs that are created from the `Song` class. Set this
 attribute equal to `0`.
@@ -104,7 +85,6 @@ attribute equal to `0`.
 At what point should we increment our `count` of songs? Whenever a new song is
 created. Your `__init__` method should call a class method
 `add_song_to_count()` that increments the value of `count` by one.
-
 Next, define the following class methods:
 
 `add_to_genres()`: adds any new genres to a class attribute `genres`, a
